@@ -1,0 +1,68 @@
+
+.App-header {
+  background-color: lightblue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.quadrado{
+  width: 320px;
+  height: 380px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.btn-login{
+  width: 70%;
+  margin-top: 20px !important;
+}
+
+.createAccount{
+  color: rgb(92, 115, 246);
+  font-size: 12px;
+  cursor: pointer;
+  
+}
+.divTexts{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 240px;
+}
+
+.formRegister{
+  background-color: yellow;
+  padding: 30px 20px 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.btn-register{
+  width: 70%;
+  margin-top: 20px !important;
+}
+
+.homepage{
+  background-color: yellow;
+  padding: 30px 20px 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: black;
+}
