@@ -9,7 +9,7 @@ const Home = () => {
 
     function sair(){
         localStorage.clear();
-        history.push("/")
+        history.push("/") 
     }
 
     return(

@@ -34,17 +34,16 @@ export default function Form(){
         }
 
         axios.post("https://kenziehub.herokuapp.com/users", formData).then(response => {
-            alert('Usuario criado com sucesso')
-            history.push("/")
+            history.push(`/sucesso/${data.name}`)
         }).catch(e => {
-            alert('Ouve algum erro, tente novamente mais tarde')
+            alert('Usuario já existe')
         })
     }
 
     return(
         <form className="formRegister" onSubmit={handleSubmit(handleForm)}>
             <div className="divTexts">
-                <TextField  required
+                <TextField
                 id="outlined-required"
                 variant="outlined"
                 size="small"
@@ -58,7 +57,7 @@ export default function Form(){
             </div>
           
             <div className="divTexts">
-                <TextField  required
+                <TextField  
                 id="outlined-required"
                 variant="outlined"
                 size="small"
@@ -72,33 +71,35 @@ export default function Form(){
             </div>
 
             <div className="divTexts">
-                <TextField  required
+                <TextField  
                 id="outlined-required"
                 variant="outlined"
                 size="small"
                 color="primary"
                 margin="normal"
                 label="Senha"
+                type="password"
                 {...register("password")}
                 error={!!errors.password}
                 helperText={errors.password?.message}
                 />
             </div>
             <div className="divTexts">
-                <TextField  required
+                <TextField  
                 id="outlined-required"
                 variant="outlined"
                 size="small"
                 color="primary"
                 margin="normal"
                 label="Confirme senha"
+                type="password"
                 {...register("passwordConfirmation")}
                 error={!!errors.passwordConfirmation}
                 helperText={errors.passwordConfirmation?.message}
                 />
             </div>
 
-            <Button className="btn-register" type="Submit" variant="contained">Cadastrar</Button>
+            <Button className="btn-register" type="Submit" variant="contained" color="success">Cadastrar</Button>
             <p className="createAccount" onClick={pageLogin}>Já é cadastrado? Faça login</p>
         </form>
     )

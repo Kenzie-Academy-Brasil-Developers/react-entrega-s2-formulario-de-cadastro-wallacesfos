@@ -10,15 +10,16 @@
   color: white;
 }
 .quadrado{
-  width: 320px;
-  height: 380px;
-  background-color: yellow;
+  width: 300px;
+  color: black;
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 11px 15px 6px rgba(0,0,0,0.63);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border: 2px solid white;
-  border-radius: 10px;
+  flex-direction: column; 
 }
 
 .btn-login{
@@ -40,14 +41,16 @@
 }
 
 .formRegister{
-  background-color: yellow;
-  padding: 30px 20px 30px 20px;
+  width: 300px;
+  color: black;
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 11px 15px 6px rgba(0,0,0,0.63);
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  border-radius: 10px;
-  border: 2px solid white;
+  align-items: center;
+  flex-direction: column; 
 }
 
 .btn-register{
@@ -56,13 +59,46 @@
 }
 
 .homepage{
-  background-color: yellow;
-  padding: 30px 20px 30px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 10px;
-  border: 2px solid white;
+  width: 300px;
   color: black;
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 11px 15px 6px rgba(0,0,0,0.63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.sucesso{
+  width: 300px;
+  color: black;
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 11px 15px 6px rgba(0,0,0,0.63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+img{
+  width: 80px;
+}
+
+.sucesso-msg{
+  text-align: center;
+  color: green;
+}
+
+.sucesso-text{
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+}
+
+.btn-sucesso{
+  width: 70%;
 }
